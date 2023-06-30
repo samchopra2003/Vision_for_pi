@@ -12,7 +12,7 @@ while True:
     ret, img = source.read()
 
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    gray = gray.astype(np.int)
+    gray = gray.astype(np.int16)
 
     if flg == 0:
         buffer = gray
